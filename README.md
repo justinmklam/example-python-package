@@ -1,5 +1,7 @@
 # My Py Package
 
+[![Documentation Status](https://readthedocs.org/projects/example-python-package/badge/?version=latest)](https://example-python-package.readthedocs.io/en/latest/?badge=latest)
+
 Example project using  my cookiecutter template.
 
 ## Installation
