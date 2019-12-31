@@ -11,7 +11,7 @@ function generate_changelog() {
         if [ "$previous_tag" != 0 ];then
             commit_hash=$(git rev-parse --short ${previous_tag})
             tag_date=$(git log -1 --pretty=format:'%ad' --date=short ${previous_tag})
-            printf "## [${previous_tag}](${repository_url}/get/${previous_tag}.zip)\n\n"
+            printf "## [${previous_tag}](${repository_url}/archive/${previous_tag}.zip)\n\n"
             printf "_Release Date: ${tag_date}, Commit Hash: ${commit_hash}_\n\n"
             git log ${current_tag}...${previous_tag} --pretty=format:"* %s ([View](${repository_url}/commits/%H))" | grep -E "${commit_grep}"
             printf "\n\n"
